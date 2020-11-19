@@ -25,10 +25,8 @@ class BaseViewController: UIViewController {
         label.text = title
 
         let colors = [
-            UIColor.red,
-            UIColor.green,
+            UIColor.lightGray,
             UIColor.blue,
-            UIColor.yellow,
             UIColor.orange,
             UIColor.gray,
             UIColor.cyan

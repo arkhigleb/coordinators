@@ -30,12 +30,15 @@ class OrderViewController: BaseViewController, Coordinated {
         let button = UIButton()
         view.addSubview(button)
 
+        button.backgroundColor = .systemRed
+        button.layer.cornerRadius = 5
         button.setTitle("Show detail", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.addTarget(self, action:  #selector(didTapDetail), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
 
-        button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        button.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -80).isActive = true
         button.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
      }
 
